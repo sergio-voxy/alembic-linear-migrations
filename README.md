@@ -19,6 +19,18 @@ While using `alembic upgrade heads` resolves this error by applying all migratio
 least one developer would have created their migration without the updated context of prior changes. This can lead to
 inconsistencies and unintended behavior.
 
+## Example of versions_hash.txt
+```
+This file contains the SHA-1 checksum of all *.py files in the alembic/versions directory.
+If you encounter merge conflicts with this file, you likely need to verify the down_revision of the migration you are
+adding.
+
+See https://github.com/sergio-voxy/alembic-linear-migrations for more details.
+
+71022cd30bc3645bd021df66250cd0fdb90c8e29  -
+```
+
+
 ## Installation
 Install [pre-commit](https://github.com/pre-commit/pre-commit) and add this to your `.pre-commit-config.yaml`
 
