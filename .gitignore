@@ -1,0 +1,35 @@
+**/__pycache__/*.pyc
+.idea
+.venv
+.schema.current.json
+.run/li.run.xml
+.DS_Store
+
+# pyenv
+.python-version
+
+# venv
+venv/**
+
+# Ignore vim files:
+*~
+*.swp
+*.swo
+
+# vscode
+.vscode/**
+
+# log files and rotations
+app.logs*
+
+# CDK asset staging directory
+cdk/.cdk.staging
+cdk/cdk.out
+# squawk log
+/npm-debug.log
+*problematic_data.json
+/live_instruction_test.html
+scripts/problematic_data.json
+
+# dual writing check script config
+scripts/dual_writing_check/config/.webconfig.ini
