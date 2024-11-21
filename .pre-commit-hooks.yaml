@@ -4,5 +4,5 @@
   entry: hooks/alembic_linear.sh
   language: script
   types: [shell]
-  # stages: [pre-commit, pre-merge-commit, manual]
   pass_filenames: false
+  always_run: true
